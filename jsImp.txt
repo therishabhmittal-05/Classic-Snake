@@ -1,1 +1,25 @@
 *snake is made with array and objects
+*snake.unshift adds the new coordiantes to snake array and snake.pop pops the last position which is creating the illusion of moving
+*function move(){
+    const head = {...snake[0]};
+    switch (direction) {
+        case "up":
+            head.y--;
+            break;
+        case "down":
+            head.y++;
+            break;
+        case "right":
+            head.x++;
+            break;
+        case "left":
+            head.x--;
+            break;
+        
+    }
+    snake.unshift(head);
+    snake.pop();
+}
+
+
+*setInterval function read about it
